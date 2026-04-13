@@ -19,6 +19,20 @@ void worker_send(int rank, int tag)
            rank, send_message, dest);
 }
 
+void root_receive(int size, int tag)
+{
+    int recv_message;
+    MPI_Status status;
+
+    for (int source = 1; source < size; source++)
+    {
+        MPI_Recv(&recv_message, 1, MPI_INT, source, tag,
+                 MPI_COMM_WORLD, &status);
+
+        printf("hello, i am rank 0 of %d. received %d from rank %d\n",
+               size, recv_message, source);
+    }
+}
 int main(int argc, char **argv) 
 {
 	// declare and initialise error handling variable
