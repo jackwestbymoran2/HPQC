@@ -8,6 +8,17 @@ void init_mpi(int argc, char **argv, int *rank, int *size)
     MPI_Comm_size(MPI_COMM_WORLD, size);
 }
 
+void worker_send(int rank, int tag)
+{
+    int send_message = rank * 10;
+    int dest = 0;
+
+    MPI_Send(&send_message, 1, MPI_INT, dest, tag, MPI_COMM_WORLD);
+
+    printf("hello, i am rank %d. sent %d to rank %d\n",
+           rank, send_message, dest);
+}
+
 int main(int argc, char **argv) 
 {
 	// declare and initialise error handling variable
