@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1. This report looks at how MPI communication works by doing a series of tests. These tests focus on things like point-to-point communication, latency, bandwidth, collective operations and custom reductions. The goal is to compare ways MPI communicates and see how efficient they are in terms of how long they take to run and how well they scale.
 
 2. MPI Communication Basics
@@ -103,3 +104,4 @@ Here is a summary of how each method worked:
 * The slowest methods were the manual Send/Recv implementations.
 
 MPI performance changes from being slow because of latency to being slow because of bandwidth, as the size of the message increases.
+>>>>>>> b2d7e8e0e7b78e09bcb52ecc856c20a1c447fbaf
