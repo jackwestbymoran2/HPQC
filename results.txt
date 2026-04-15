@@ -1,6 +1,0 @@
-2 total processes failed to start
-size = 2 ints | total = 0.001165 s | avg = 5.823165e-07 s
-size = 16 ints | total = 0.001405 s | avg = 7.026395e-07 s
-size = 256 ints | total = 0.002671 s | avg = 1.335490e-06 s
-size = 4096 ints | total = 0.014003 s | avg = 7.001617e-06 s
-size = 262144 ints | total = 0.260122 s | avg = 1.300609e-04 s
