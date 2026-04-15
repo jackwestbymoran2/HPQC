@@ -37,7 +37,7 @@ void root_receive(int size, int tag)
     }
 }
 
-/* main function controls overall mpi program flow */1~
+/* main function controls overall mpi program flow */
 int main(int argc, char **argv)
 {
     int rank, size;
